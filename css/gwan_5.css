@@ -1,0 +1,107 @@
+
+
+body{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+a button{
+  background:none;
+  border: none;
+  position: absolute;
+  top : 175px;
+  left : 10%;
+  z-index:10;
+}
+a button:hover{
+  cursor:pointer;
+}
+a button:before{
+  content: "\e906";
+  font-family: 'xeicon';
+  font-size: 6vw;
+  font-weight: bold;
+  position: fixed;
+}
+.head{
+  width:100vw;
+  height: 100vh;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+}
+
+.head1{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.head_img{
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  top: 175px;
+  left: 45%;
+  z-index: 3;
+}
+.head_img img{
+  width: 100%;
+}
+.head_title{
+ position: relative;
+ top: 120px;
+ left : 9%;
+}
+.head_title ul li{
+  list-style: none;
+}
+#ex1{
+  font-size: 2vw;
+  font-family: 'Hahmlet', serif;
+  font-weight: 600;
+}
+#ex2{
+  margin-top: 40px;
+  line-height: 4vh;
+  font-size: 0.9vw;
+  font-family: 'Noto-Sans KR', sans-serif;
+  font-weight: 300;
+}
+
+
+.sub_img{
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+}
+
+.sub_img_1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.sub_img_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-top: 100px;
+}
+.sub_img img{
+  width: 17vw;
+  margin: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.sub_img img:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+  z-index: 3;
+}

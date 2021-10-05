@@ -1,0 +1,144 @@
+body{
+  margin: 0;
+  padding: 0;
+  width:100%;
+height:100%;
+overflow: hidden;
+}
+nav{
+  position: relative;
+  z-index: 3;
+}
+.navbar{
+  position: absolute;
+  padding : 0;
+  margin-left: 7.8%;
+  margin-top:2.2%;
+  display: flex;
+}
+.navbar_2 ul{
+display:  flex;
+position: relative;
+padding :0;
+margin-left: 65.2%;
+margin-top:2.2%;
+}
+.navbar_2 ul li{
+  list-style: none;
+  margin: 5.4%;
+  font-size: 1.5em;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  margin-left: 50px;
+}
+.navbar_2 ul li a{
+  text-decoration: none;
+  color:black;
+}
+.navbar_2 ul li:hover{
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 900;
+}
+.navbar_1{
+  width: 4.3%;
+  z-index: 3;
+}
+
+
+.back{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  margin-top : -12.1%;
+}
+.back button {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  transform: translatey(50%;);
+  font-size: 0;
+  color: transparent;
+  border: none;
+  background: none;
+}
+.back ul{
+  list-style: none;
+}
+.back button.slick-prev{
+  left: 0;
+}
+.back button.slick-next{
+  right: 0;
+  z-index: -1;
+}
+
+@media screen and ( min-width : 769px ) and ( max-width : 1366px ){
+  nav{
+    margin: 0;
+    width: 100%;
+  }
+  .navbar{
+    margin: 0;
+    top:50px;
+    left: 40px;
+
+  }
+  .navbar_2{
+    margin: 0;
+  }
+  .navbar_2 ul{
+    margin: 0;
+    left:820px;
+      top: -20px;
+  }
+  .navbar_2 ul li{
+ font-size: 20px;
+ margin-left: 0;
+  }
+  .back{
+    position:absolute;
+    width: 1366px;
+  }
+  .back div img{
+    width: 1366px;
+  }
+
+
+}
+@media screen and ( max-width : 768px ){
+  nav{
+    margin: 0;
+    width: 100%;
+  }
+  .navbar{
+    margin: 0;
+    top:35px;
+    left: 40px;
+  }
+  .navbar_1 img{
+    width: 60px;
+  }
+  .navbar_2{
+    margin: 0;
+  }
+  .navbar_2 ul{
+    margin: 0;
+    left:65%;
+    top: -20px;
+  }
+  .navbar_2 ul li{
+font-size: 0.7em;
+ margin-left: 0;
+
+  }
+  .back{
+    position:absolute;
+    top: -20px;
+  }
+  .back div img{
+    width: 100%;
+  }
+
+
+}
